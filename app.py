@@ -15,7 +15,7 @@ file = st.file_uploader('Rasm yuklash', type=['png', 'jpeg', 'gif', 'svg'])
 if file:
     st.image(file)
 
-    img = PILImage.create(file)
+    img = PILImage.open(file)
 
     model = load_learner('fish_model.pkl')
 
