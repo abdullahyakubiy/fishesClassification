@@ -7,6 +7,7 @@ import platform
 plt = platform.system()
 if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 
+#title
 st.title('Suv hayvonlarini klassifikatsiya qiluvchi model')
 
 #rasmni yuklash
