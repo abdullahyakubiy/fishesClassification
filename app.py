@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image as PILImage
-from fastai.vision import *
+from fastai.vision.all import *
 import pathlib
 import plotly.express as px
 import platform
