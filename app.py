@@ -1,5 +1,5 @@
 import streamlit as st
-from PIL import Image as PILImage
+from PIL import Image
 from fastai.vision.all import *
 import pathlib
 import plotly.express as px
@@ -15,7 +15,7 @@ file = st.file_uploader('Rasm yuklash', type=['png', 'jpeg', 'gif', 'svg'])
 if file:
     st.image(file)
 
-    img = PILImage.open(file)
+    img = Image.open(file)
 
     model = load_learner('fish_model.pkl')
 
